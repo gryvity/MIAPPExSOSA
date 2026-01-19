@@ -1,1 +1,4 @@
-/ontodesigner/
+/temp/
+/.venv/
+/scripts/notebooks/test_data/
+/docs/material/

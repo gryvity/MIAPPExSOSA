@@ -55,6 +55,7 @@ https://jena.apache.org/documentation/ontology/
 https://scs-ontouml.eemcs.utwente.nl/catalog/b663ca18-8085-44a7-bcfe-2c2b5ba1faa8
 https://github.com/w3c/sdw-sosa-ssn
 
+ML : https://mlcommons.org/working-groups/data/croissant/
 
 
 # Ontologies for Further descibing Experiments and Data
