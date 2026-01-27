@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://example.org/mappings.owl"
+         xmlns="http://example.org/mappings.owl#">
+
+<owl:Ontology rdf:about="http://example.org/mappings.owl">
+  <owl:imports rdf:resource="http://example.org/medical.owl"/>
+  <owl:imports rdf:resource="http://example.org/clinical.owl"/>
+  <owl:imports rdf:resource="file:///home/gryvity/Desktop/workstation/lab/MIAPPEx/onto_build/lab_ontologies/medical.owl"/>
+  <owl:imports rdf:resource="http://example.org//home/gryvity/Desktop/workstation/lab/MIAPPEx/onto_build/lab_ontologies/medical.owl"/>
+</owl:Ontology>
+
+<owl:ObjectProperty rdf:about="#maps_to">
+  <rdfs:domain rdf:resource="#ConceptMapping"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="#mapsTo">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about="#ConceptMapping">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#symptom_mapping">
+  <rdf:type rdf:resource="#ConceptMapping"/>
+  <maps_to rdf:resource="http://example.org/clinical.owl#chronic_cough"/>
+  <maps_to rdf:resource="http://example.org/medical.owl#cough"/>
+</owl:NamedIndividual>
+
+<rdf:Description rdf:about="http://example.org/medical.owl#Symptom">
+  <rdfs:subClassOf rdf:resource="http://example.org/clinical.owl#ClinicalSign"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.org/clinical.owl#exhibits">
+  <owl:equivalentProperty rdf:resource="http://example.org/medical.owl#has_symptom"/>
+  <owl:equivalentProperty rdf:resource="file:///home/gryvity/Desktop/workstation/lab/MIAPPEx/onto_build/lab_ontologies/medical.owl#has_symptom"/>
+  <owl:equivalentProperty rdf:resource="http://example.org//home/gryvity/Desktop/workstation/lab/MIAPPEx/onto_build/lab_ontologies/medical.owl#has_symptom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.org/clinical.owl#Malignancy">
+  <owl:equivalentClass rdf:resource="http://example.org/medical.owl#Cancer"/>
+  <owl:equivalentClass rdf:resource="file:///home/gryvity/Desktop/workstation/lab/MIAPPEx/onto_build/lab_ontologies/medical.owl#Cancer"/>
+  <owl:equivalentClass rdf:resource="http://example.org//home/gryvity/Desktop/workstation/lab/MIAPPEx/onto_build/lab_ontologies/medical.owl#Cancer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.org/clinical.owl#lung_malignancy">
+  <owl:sameAs rdf:resource="http://example.org/medical.owl#lung_cancer"/>
+  <owl:sameAs rdf:resource="file:///home/gryvity/Desktop/workstation/lab/MIAPPEx/onto_build/lab_ontologies/medical.owl#lung_cancer"/>
+  <owl:sameAs rdf:resource="http://example.org//home/gryvity/Desktop/workstation/lab/MIAPPEx/onto_build/lab_ontologies/medical.owl#lung_cancer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="file:///home/gryvity/Desktop/workstation/lab/MIAPPEx/onto_build/lab_ontologies/medical.owl#Symptom">
+  <rdfs:subClassOf rdf:resource="http://example.org/clinical.owl#ClinicalSign"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.org//home/gryvity/Desktop/workstation/lab/MIAPPEx/onto_build/lab_ontologies/medical.owl#Symptom">
+  <rdfs:subClassOf rdf:resource="http://example.org/clinical.owl#ClinicalSign"/>
+</rdf:Description>
+
+
+</rdf:RDF>

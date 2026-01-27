@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://example.org/clinical.owl"
+         xmlns="http://example.org/clinical.owl#">
+
+<owl:Ontology rdf:about="http://example.org/clinical.owl"/>
+
+<owl:ObjectProperty rdf:about="#exhibits">
+  <rdfs:domain rdf:resource="#Disorder"/>
+  <rdfs:range rdf:resource="#ClinicalSign"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#Disorder">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ClinicalSign">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Malignancy">
+  <rdfs:subClassOf rdf:resource="#Disorder"/>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#lung_malignancy">
+  <rdf:type rdf:resource="#Malignancy"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#chronic_cough">
+  <rdf:type rdf:resource="#ClinicalSign"/>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>

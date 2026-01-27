@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="file:///home/gryvity/Desktop/workstation/lab/MIAPPEx/onto_build/lab_ontologies/miappeox_test.owl"
+         xmlns="file:///home/gryvity/Desktop/workstation/lab/MIAPPEx/onto_build/lab_ontologies/miappeox_test.owl#">
+
+<owl:Ontology rdf:about="file:///home/gryvity/Desktop/workstation/lab/MIAPPEx/onto_build/lab_ontologies/miappeox_test.owl">
+  <owl:imports rdf:resource="http://www.lesfleursdunormal.fr/static/_downloads/pizza_onto.owl"/>
+</owl:Ontology>
+
+
+</rdf:RDF>
