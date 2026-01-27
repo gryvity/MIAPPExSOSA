@@ -1,4 +1,4 @@
-# About MIAPPE
+# MIAPPE
 
 ## References
 
@@ -16,3 +16,4 @@ investigations: the MIBBI project
 
 
 https://www.berrybase.de/loadBasket/weyzuH1iSr4
+
