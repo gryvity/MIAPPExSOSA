@@ -7,74 +7,10 @@
          xmlns="miappeXsosa/miappeXsosa.owl#">
 
 <owl:Ontology rdf:about="miappeXsosa/miappeXsosa.owl">
-  <owl:imports rdf:resource="http://purl.org/ppeo/PPEO.owl"/>
+  <owl:imports rdf:resource="http://ppeo.org/ontology/ppeo.owl"/>
   <owl:imports rdf:resource="http://www.w3.org/ns/sosa"/>
   <owl:imports rdf:resource="http://www.w3.org/ns/ssn"/>
 </owl:Ontology>
-
-<owl:Class rdf:about="#ObservationUnit">
-  <rdfs:subClassOf rdf:resource="http://purl.org/ppeo/PPEO.owl#observation_unit"/>
-</owl:Class>
-
-<owl:Class rdf:about="#Person">
-  <rdfs:subClassOf rdf:resource="http://purl.org/ppeo/PPEO.owl#person"/>
-</owl:Class>
-
-<owl:Class rdf:about="#Study">
-  <rdfs:subClassOf rdf:resource="http://purl.org/ppeo/PPEO.owl#study"/>
-</owl:Class>
-
-<owl:Class rdf:about="#BiologicalMaterial">
-  <rdfs:subClassOf rdf:resource="http://purl.org/ppeo/PPEO.owl#biological_material"/>
-</owl:Class>
-
-<owl:Class rdf:about="#Environment">
-  <rdfs:subClassOf rdf:resource="http://purl.org/ppeo/PPEO.owl#environment"/>
-</owl:Class>
-
-<owl:Class rdf:about="#Factor">
-  <rdfs:subClassOf rdf:resource="http://purl.org/ppeo/PPEO.owl#factor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#ObservedVariable">
-  <rdfs:subClassOf rdf:resource="http://purl.org/ppeo/PPEO.owl#observed_variable"/>
-</owl:Class>
-
-<owl:Class rdf:about="#Investigation">
-  <rdfs:subClassOf rdf:resource="http://purl.org/ppeo/PPEO.owl#investigation"/>
-</owl:Class>
-
-<owl:Class rdf:about="#FeatureOfInterest">
-  <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
-</owl:Class>
-
-<owl:Class rdf:about="#ObservableProperty">
-  <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
-</owl:Class>
-
-<owl:Class rdf:about="#Observation">
-  <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-</owl:Class>
-
-<owl:Class rdf:about="#Procedure">
-  <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Procedure"/>
-</owl:Class>
-
-<owl:Class rdf:about="#Sensor">
-  <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#Output">
-  <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Output"/>
-</owl:Class>
-
-<owl:Class rdf:about="#Input">
-  <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Input"/>
-</owl:Class>
-
-<owl:Class rdf:about="#System">
-  <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/System"/>
-</owl:Class>
 
 
 </rdf:RDF>
