@@ -1,7 +1,6 @@
 # MIAPPExSOSA
 
-
-
+Minimum Information 
 
 
 
