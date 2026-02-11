@@ -4,3 +4,5 @@
 /docs/material/
 /onto_build/
 /data/examples/
+/knowledgebase/
+.readthedocs.yaml

@@ -7,10 +7,27 @@
          xmlns="miappeXsosa/miappeXsosa.owl#">
 
 <owl:Ontology rdf:about="miappeXsosa/miappeXsosa.owl">
-  <owl:imports rdf:resource="http://ppeo.org/ontology/ppeo.owl"/>
+  <owl:imports rdf:resource="http://purl.org/ppeo/PPEO.owl"/>
   <owl:imports rdf:resource="http://www.w3.org/ns/sosa"/>
   <owl:imports rdf:resource="http://www.w3.org/ns/ssn"/>
 </owl:Ontology>
+
+<owl:ObjectProperty rdf:about="#hasPhenotype">
+  <rdfs:domain rdf:resource="#PlantObservation"/>
+  <rdfs:range rdf:resource="http://purl.org/ppeo/PPEO.owl#observed_variable"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Links observation to phenotype</rdfs:comment>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#PlantObservation">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An observation specific to plant phenotyping</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plant Observation</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#EnhancedStudy">
+  <rdfs:subClassOf rdf:resource="http://purl.org/ppeo/PPEO.owl#study"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extended study class with additional properties</rdfs:comment>
+</owl:Class>
 
 
 </rdf:RDF>

@@ -1,12 +1,10 @@
 # Buidling a Knowledge Base
 
-## Dev Plan
+## Content
 
-- Create template for website pages
-    - html/css/js
-- Write content for each section
-- Set up navigation between pages
-- Test website for usability and responsiveness
+Motivation and Research QUestions
+
+->
 
 
 
