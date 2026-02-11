@@ -1,8 +1,7 @@
 /temp/
 /.venv/
-/scripts/notebooks/test_data/
+/scripts/notebooks/
 /docs/material/
 /onto_build/
 /data/examples/
-/knowledgebase/
 .readthedocs.yaml
