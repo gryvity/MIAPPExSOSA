@@ -1,0 +1,48 @@
+"iri" : "" 
+"name" : "miappexsosa"
+"format" : "owl"
+"version" : 0.1
+"variableConvention" : "CamelCase"
+"imports" :
+  "ppeo" :
+    "onto_iri" : "http://purl.org/ppeo/PPEO.owl"
+    "format" : "owl"
+    "triplets" :
+      - ["Investigation", "hasAssociatedPublication", ["str", "URI"]]
+      - ["Sample", "deriveFrom", "ObservationUnit"]
+      - ["Person", "hasAffiliation", "Institution"]
+      - ["ObservationUnit", "hasBiologicalMaterial", "BiologicalMaterial"]
+      - ["ObservationUnit", "hasEvent", "Event"]
+      - ["ObservationUnit", "hasObservationLevel", "ObservationLevel"]
+      - ["Study", "hasBiologicalMaterial", "BiologicalMaterial"]
+      - ["Study", "hasContactInstitution", "Institution"]
+      - ["Study", "hasEnvironment", "Environment"]
+      - ["Study", "hasEvent", "Event"]
+      - ["Study", "hasFactor", "Factor"]
+      - ["Study", "hasGrowthFacility", "GrowthFacility"]
+      - ["Study", "hasObservationLevelHierarchy", "ObservationLevelHierarchy"]
+      - ["DataFile", "hasObservation", "Observation"]
+      - ["ObservedVariable", "hasMethod", "Method"]
+      - ["Environment", "hasEnvironmentParameter", "EnvironmentParameter" ]
+      - ["Factor", "hasFactorValue", "FactorValue"]
+      - ["Factor", "hasModality", "FactorValue"]
+      - ["FactorValue", "isModalityOf", "Factor"]
+      - ["BiologicalMaterial", "hasCountryOfOrigin", "Country"]
+    "synonyms":
+      "hasAssociatedPublication": ["Associated Publication"]
+
+  "sosa" :
+    "iri" : "http://www.w3.org/ns/sosa/"
+    "format" : "ttl"
+    "triplets" : 
+      - ""
+  "ssn" : 
+    "iri" : "http://www.w3.org/ns/ssn/"
+    "format" : "ttl"
+    "triplets" : 
+      - ""
+"modifications" : 
+  "triplets" : 
+    - []
+  "axioms" : 
+    - []

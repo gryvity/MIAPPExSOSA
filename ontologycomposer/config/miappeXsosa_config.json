@@ -1,0 +1,65 @@
+{
+"ppeo" : {
+    "uri" : "http://purl.org/ppeo/PPEO.owl",
+    "uri_format" : "owl",
+    "local" : "../external/ppeo.owl",
+    "local_format" : "owl",
+    "class" : [
+        "investigation",
+        "person",
+        "study",
+        "observation_unit",
+        "observed_variable",
+        "biological_material",
+        "factor",
+        "environment"
+        ],
+    "data_properties" : [
+
+        ],
+    "object_properties" : [
+
+        ]
+    },
+"sosa" : {
+    "uri" : "http://www.w3.org/ns/sosa/",
+    "uri_format" : "ttl",
+    "local" : "../external/sosa.owl",
+    "local_format" : "owl",
+    "class" : [
+        "Observation",
+        "FeatureOfInterest",
+        "Procedure",
+        "ObservableProperty",
+        "Sensor",
+        "Platform"
+        ],
+    "data_properties" : [
+
+        ],
+    "object_properties" : [
+
+        ]
+    },
+"ssn" : {
+    "uri" : "http://www.w3.org/ns/ssn/",
+    "uri_format" : "ttl",
+    "local" : "../external/ssn.ttl",
+    "local_format" : "ttl",
+    "class" : [
+        "System",
+        "Input",
+        "Output",
+        "Deployment"
+        ],
+    "data_properties" : [
+
+        ],
+    "object_properties" : [
+
+        ]
+    }
+}
+    
+    
+    
